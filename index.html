@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Install Toca World iOS App</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, sans-serif;
+            background: linear-gradient(135deg, #FF6B6B 0%, #FFD93D 50%, #6BCF7F 100%);
+            margin: 0;
+            padding: 20px;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .container {
+            background: white;
+            border-radius: 20px;
+            padding: 40px;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+            text-align: center;
+            max-width: 400px;
+            width: 100%;
+        }
+        h1 { margin-bottom: 10px; font-size: 28px; color: #222; }
+        .version { color: #666; margin-bottom: 30px; }
+        .install-btn {
+            background: linear-gradient(135deg, #FF6B6B, #FF8E53);
+            color: white;
+            border: none;
+            padding: 16px 32px;
+            border-radius: 30px;
+            font-size: 18px;
+            font-weight: 600;
+            cursor: pointer;
+            display: inline-block;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 15px rgba(255,107,107,0.3);
+            margin-bottom: 15px;
+        }
+        .install-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 25px rgba(255,107,107,0.4);
+        }
+        .note, .important {
+            margin-top: 20px;
+            font-size: 14px;
+            color: #555;
+            line-height: 1.5;
+        }
+        .important {
+            font-weight: bold;
+            color: #d9534f;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Toca World</h1>
+        <p class="version">Version 1.110.1</p>
+        
+        <!-- Certificate Install Button -->
+        <button class="install-btn" onclick="window.open('Tianjin%20University%20of%20Commerce.mobileconfig')">
+            📜 Install Certificate
+        </button>
+
+        <!-- App Install Button -->
+        <button class="install-btn" onclick="window.open('itms-services://?action=download-manifest&url=https://gist.githubusercontent.com/somthingsui/a6a429852862664725d449b78cb5a5ed/raw/c1fbc4793ce758296ca4d9d89995f52e41e7726a/manifest.plist')">
+            🏠 Install Toca World
+        </button>
+        
+        <p class="note">⚠ Please open this page only in Safari.</p>
+        
+        <p class="important">
+            Important: Installation may take several minutes.<br>
+            You will NOT see the usual loading circle, but the app will be installed successfully at the end.
+        </p>
+        
+        <p class="important">
+            ✅ <strong>Bundle ID now matches!</strong> Ready to install.<br>
+            After installation, go to <strong>Settings → General → VPN &amp; Device Management</strong> and trust the certificate for <strong>com.tocaboca.tocalifeworld</strong>.
+        </p>
+    </div>
+</body>
+</html>
